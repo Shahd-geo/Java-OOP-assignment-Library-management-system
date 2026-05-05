@@ -31,8 +31,8 @@ public class LibraryItem {
                 isAvailable = true;
         }
 
-   public String getDetails() {
-      return null;
+        public String getDetails() {
+                return "Item: " + title;
    }
 }
 
