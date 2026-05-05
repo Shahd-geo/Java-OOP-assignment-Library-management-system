@@ -23,4 +23,7 @@ public class LibraryService {
         }
         return null;
     }
+    public void showAvailableItems(){
+
+    }
 }
