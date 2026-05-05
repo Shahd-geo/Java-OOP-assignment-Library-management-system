@@ -9,3 +9,8 @@ public class Magazine extends LibraryItem {
             issueNumber = newIssue;
         }
 
+    public String getDetails() {
+        return "Magazine: " + getTitle() + " Issue: " + issueNumber;
+    }
+}
+
