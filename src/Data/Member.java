@@ -22,4 +22,8 @@ public class Member {
     public String getDetails() {
         return name + " - " + address.getFullAddress();
     }
+    public void borrowItem(LibraryItem item) {
+        borrowedItems.add(item);
+    }
+
 }
