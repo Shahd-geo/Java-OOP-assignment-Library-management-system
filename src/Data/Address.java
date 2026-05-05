@@ -9,4 +9,8 @@ public class Address {
         cityName = newCity;
     }
 
+    public String getFullAddress() {
+        return streetName + ", " + cityName;
+    }
+
 }
