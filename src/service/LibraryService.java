@@ -24,6 +24,10 @@ public class LibraryService {
         return null;
     }
     public void showAvailableItems(){
-
+        for (LibraryItem item : items) {
+            if (item.isAvailable()) {
+                System.out.println(item.getDetails());
+            }
+        }
     }
 }
