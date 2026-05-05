@@ -15,4 +15,11 @@ public class Member {
         address = newAddress;
         borrowedItems = new ArrayList<>();
     }
+    public int getId() {
+        return id;
+    }
+
+    public String getDetails() {
+        return name + " - " + address.getFullAddress();
+    }
 }
