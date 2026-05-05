@@ -7,4 +7,12 @@ public class Member {
     private String name;
     private Address address;
     private ArrayList<LibraryItem> borrowedItems;
+
+
+    public Member(int newId, String newName, Address newAddress) {
+        id = newId;
+        name = newName;
+        address = newAddress;
+        borrowedItems = new ArrayList<>();
+    }
 }
