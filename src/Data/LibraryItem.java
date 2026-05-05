@@ -33,7 +33,6 @@ public class LibraryItem {
 
         public String getDetails() {
                 return "Item: " + title;
+        }
    }
-}
-
 
