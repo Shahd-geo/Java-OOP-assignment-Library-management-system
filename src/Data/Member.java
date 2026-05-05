@@ -25,5 +25,8 @@ public class Member {
     public void borrowItem(LibraryItem item) {
         borrowedItems.add(item);
     }
+    public void returnItem(LibraryItem item) {
+        borrowedItems.remove(item);
+    }
 
 }
