@@ -12,4 +12,5 @@ public class MemberService {
     public void addMember(Member member) {
         members.add(member);
     }
+    public Member findMemberById(int id) {
 }
