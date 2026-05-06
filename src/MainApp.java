@@ -28,6 +28,81 @@ public class MainApp {
             System.out.println("7. Return Item");
             System.out.println("8. Exit");
             int choice = input.nextInt();
+            switch (choice) {
 
+                case 1:
 
+                    Book book =
+                            new Book(1, "Java Basics", "Ali");
+
+                    libraryService.addItem(book);
+
+                    System.out.println("Book Added");
+
+                    break;
+
+                case 2:
+
+                    Magazine magazine =
+                            new Magazine(2, "Tech", 5);
+
+                    libraryService.addItem(magazine);
+
+                    System.out.println("Magazine Added");
+
+                    break;
+
+                case 3:
+
+                    libraryService.showAvailableItems();
+
+                    break;
+
+                case 4:
+
+                    Address address =
+                            new Address("Muscat", "Oman");
+
+                    Member member =
+                            new Member(1, "Shahd", address);
+
+                    memberService.addMember(member);
+
+                    System.out.println("Member Added");
+
+                    break;
+
+                case 5:
+
+                    memberService.showAllMembers();
+
+                    break;
+
+                case 6:
+
+                    borrowService.borrowItem(1, 1);
+
+                    break;
+
+                case 7:
+
+                    borrowService.returnItem(1, 1);
+
+                    break;
+
+                case 8:
+
+                    System.out.println("Program Ended");
+
+                    return;
+
+                default:
+
+                    System.out.println("Invalid Choice");
+            }
         }
+    }
+
+
+
+}
