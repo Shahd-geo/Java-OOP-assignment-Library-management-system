@@ -21,7 +21,9 @@ public class MemberService {
         return null;
     }
     public void showAllMembers() {
-
+        for (Member m : members) {
+            System.out.println(m.getDetails());
+        }
     }
 
 }
