@@ -20,6 +20,9 @@ public class MemberService {
         }
         return null;
     }
+    public void showAllMembers() {
+
+    }
 
 }
-}
+
