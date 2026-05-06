@@ -1,3 +1,4 @@
+import service.BorrowService;
 import service.LibraryService;
 import service.MemberService;
 
@@ -11,5 +12,8 @@ public class MainApp {
         LibraryService libraryService = new LibraryService();
 
         MemberService memberService = new MemberService();
+
+        BorrowService borrowService =
+                new BorrowService(libraryService, memberService);
 
     }
