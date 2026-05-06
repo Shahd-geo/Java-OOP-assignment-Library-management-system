@@ -38,6 +38,8 @@ public class Menu {
             System.out.println("7. Return Item");
             System.out.println("8. Exit");
 
+            int choice = input.nextInt();
+
     }
 
 
