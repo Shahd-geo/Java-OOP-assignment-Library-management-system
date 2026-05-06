@@ -16,4 +16,8 @@ public class MainApp {
         BorrowService borrowService =
                 new BorrowService(libraryService, memberService);
 
+        while (true) {
+
+            System.out.println("====== Library System ======");
+
     }
