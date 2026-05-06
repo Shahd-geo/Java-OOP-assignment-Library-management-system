@@ -34,6 +34,22 @@ public class BorrowService {
 
         System.out.println("Borrow successful");
     }
+    public void returnItem(int memberId, int itemId) {
 
+        Member member = memberService.findMemberById(memberId);
 
+        LibraryItem item = libraryService.findItemById(itemId);
+
+        if (member == null || item == null) {
+            System.out.println("Member or Item not found");
+            return;
+        }
+
+        item.returnItem();
+
+        member.returnItem(item);
+
+        System.out.println("Return successful");
+    }
 }
+
