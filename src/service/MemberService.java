@@ -9,4 +9,7 @@ public class MemberService {
     public MemberService() {
         members = new ArrayList<>();
     }
+    public void addMember(Member member) {
+        members.add(member);
+    }
 }
