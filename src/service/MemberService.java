@@ -13,4 +13,13 @@ public class MemberService {
         members.add(member);
     }
     public Member findMemberById(int id) {
+        for (Member m : members) {
+            if (m.getId() == id) {
+                return m;
+            }
+        }
+        return null;
+    }
+
+}
 }
